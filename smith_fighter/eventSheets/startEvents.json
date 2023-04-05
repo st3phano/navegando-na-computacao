@@ -1,0 +1,60 @@
+{
+	"name": "startEvents",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 366270301689134
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "audio",
+					"sid": 950965877677770,
+					"parameters": {
+						"audio-file": "menu",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 552047623305227
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "keyboard",
+					"sid": 974773142969075,
+					"parameters": {
+						"key": 13
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "audio",
+					"sid": 479656769711348
+				},
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 965729437944847,
+					"parameters": {
+						"layout": "\"fightLayout\""
+					}
+				}
+			],
+			"sid": 257580721833852
+		}
+	],
+	"sid": 704814764971948
+}

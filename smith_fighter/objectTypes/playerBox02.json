@@ -1,0 +1,75 @@
+{
+	"name": "playerBox02",
+	"plugin-id": "Sprite",
+	"sid": 720311710914289,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "life",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 356373888200019
+		},
+		{
+			"name": "punchPower",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 485269086335212
+		},
+		{
+			"name": "kickPower",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 122608250630790
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 340790901518558
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 583736912865688
+		},
+		{
+			"behaviorId": "bound",
+			"name": "BoundToLayout",
+			"sid": 615118626139324
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1193883,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 458503111578456,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
