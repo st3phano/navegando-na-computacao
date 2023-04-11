@@ -292,6 +292,29 @@
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 4
+			},
+			{
+				"frames": [
+					{
+						"width": 768,
+						"height": 768,
+						"originX": 0.4817708333333333,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8255364,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 914875068408801,
+				"name": "Block",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
 			}
 		],
 		"subfolders": []

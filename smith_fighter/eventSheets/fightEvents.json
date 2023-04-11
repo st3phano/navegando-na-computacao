@@ -315,14 +315,14 @@
 							}
 						},
 						{
+							"id": "stop-all",
+							"objectClass": "audio",
+							"sid": 608107925891272
+						},
+						{
 							"id": "restart-layout",
 							"objectClass": "System",
 							"sid": 775088014259340
-						},
-						{
-							"id": "stop-all",
-							"objectClass": "audio",
-							"sid": 888495926492836
 						}
 					],
 					"sid": 895353456519296,
@@ -365,6 +365,15 @@
 								"comparison": 0,
 								"number": "2"
 							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "playerGraphics02",
+							"sid": 494200803942712,
+							"parameters": {
+								"animation": "\"Block\""
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -729,6 +738,49 @@
 							"eventType": "block",
 							"conditions": [
 								{
+									"id": "key-is-down",
+									"objectClass": "keyboard",
+									"sid": 989560137740840,
+									"parameters": {
+										"key": 83
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "playerGraphics01",
+									"sid": 979580895077388,
+									"parameters": {
+										"animation": "\"Block\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-ignoring-input",
+									"objectClass": "playerBox01",
+									"sid": 576883533354817,
+									"behaviorType": "Platform",
+									"parameters": {
+										"input": "start-ignoring"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "playerBox01",
+									"sid": 187486498695158,
+									"behaviorType": "Solid",
+									"parameters": {
+										"state": "enabled"
+									}
+								}
+							],
+							"sid": 872074425044594
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
 									"id": "on-key-pressed",
 									"objectClass": "keyboard",
 									"sid": 119102714066957,
@@ -844,6 +896,40 @@
 						}
 					],
 					"sid": 236120170451444
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-released",
+							"objectClass": "keyboard",
+							"sid": 865302359948403,
+							"parameters": {
+								"key": 83
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "playerBox01",
+							"sid": 199795234820292,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "stop-ignoring"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "playerBox01",
+							"sid": 586906131874582,
+							"behaviorType": "Solid",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 877707178262221
 				}
 			],
 			"sid": 921260546575969
@@ -882,6 +968,15 @@
 								"comparison": 0,
 								"number": "2"
 							}
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "playerGraphics01",
+							"sid": 575825703225773,
+							"parameters": {
+								"animation": "\"Block\""
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -1246,6 +1341,49 @@
 							"eventType": "block",
 							"conditions": [
 								{
+									"id": "key-is-down",
+									"objectClass": "keyboard",
+									"sid": 800228788191042,
+									"parameters": {
+										"key": 40
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "playerGraphics02",
+									"sid": 278248224986845,
+									"parameters": {
+										"animation": "\"Block\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-ignoring-input",
+									"objectClass": "playerBox02",
+									"sid": 853675388597563,
+									"behaviorType": "Platform",
+									"parameters": {
+										"input": "start-ignoring"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "playerBox02",
+									"sid": 504821669634970,
+									"behaviorType": "Solid",
+									"parameters": {
+										"state": "enabled"
+									}
+								}
+							],
+							"sid": 578347609524151
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
 									"id": "on-key-pressed",
 									"objectClass": "keyboard",
 									"sid": 757168463290006,
@@ -1361,6 +1499,40 @@
 						}
 					],
 					"sid": 492740604647746
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-released",
+							"objectClass": "keyboard",
+							"sid": 533319967152564,
+							"parameters": {
+								"key": 40
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "playerBox02",
+							"sid": 420131210678059,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "stop-ignoring"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "playerBox02",
+							"sid": 488851882375439,
+							"behaviorType": "Solid",
+							"parameters": {
+								"state": "enabled"
+							}
+						}
+					],
+					"sid": 223116431005316
 				}
 			],
 			"sid": 969341538009310
