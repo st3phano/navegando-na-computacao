@@ -229,7 +229,7 @@
 				"sid": 417192259266059,
 				"name": "Punch",
 				"isLooping": false,
-				"isPingPong": false,
+				"isPingPong": true,
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 8
@@ -288,7 +288,7 @@
 				"sid": 296815241690920,
 				"name": "Kick",
 				"isLooping": false,
-				"isPingPong": false,
+				"isPingPong": true,
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 4
