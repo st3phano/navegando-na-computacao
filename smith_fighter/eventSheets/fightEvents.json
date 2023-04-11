@@ -757,21 +757,21 @@
 									}
 								},
 								{
-									"id": "set-ignoring-input",
-									"objectClass": "playerBox01",
-									"sid": 576883533354817,
-									"behaviorType": "Platform",
-									"parameters": {
-										"input": "start-ignoring"
-									}
-								},
-								{
 									"id": "set-enabled",
 									"objectClass": "playerBox01",
 									"sid": 187486498695158,
 									"behaviorType": "Solid",
 									"parameters": {
 										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "playerGraphics01",
+									"sid": 556721469129101,
+									"parameters": {
+										"instance-variable": "animationPlaying",
+										"value": "true"
 									}
 								}
 							],
@@ -911,21 +911,21 @@
 					],
 					"actions": [
 						{
-							"id": "set-ignoring-input",
-							"objectClass": "playerBox01",
-							"sid": 199795234820292,
-							"behaviorType": "Platform",
-							"parameters": {
-								"input": "stop-ignoring"
-							}
-						},
-						{
 							"id": "set-enabled",
 							"objectClass": "playerBox01",
 							"sid": 586906131874582,
 							"behaviorType": "Solid",
 							"parameters": {
 								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "playerGraphics01",
+							"sid": 197800252468477,
+							"parameters": {
+								"instance-variable": "animationPlaying",
+								"value": "false"
 							}
 						}
 					],
@@ -1360,21 +1360,21 @@
 									}
 								},
 								{
-									"id": "set-ignoring-input",
-									"objectClass": "playerBox02",
-									"sid": 853675388597563,
-									"behaviorType": "Platform",
-									"parameters": {
-										"input": "start-ignoring"
-									}
-								},
-								{
 									"id": "set-enabled",
 									"objectClass": "playerBox02",
 									"sid": 504821669634970,
 									"behaviorType": "Solid",
 									"parameters": {
 										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "playerGraphics02",
+									"sid": 395552413907460,
+									"parameters": {
+										"instance-variable": "animationPlaying",
+										"value": "true"
 									}
 								}
 							],
@@ -1514,21 +1514,21 @@
 					],
 					"actions": [
 						{
-							"id": "set-ignoring-input",
-							"objectClass": "playerBox02",
-							"sid": 420131210678059,
-							"behaviorType": "Platform",
-							"parameters": {
-								"input": "stop-ignoring"
-							}
-						},
-						{
 							"id": "set-enabled",
 							"objectClass": "playerBox02",
 							"sid": 488851882375439,
 							"behaviorType": "Solid",
 							"parameters": {
 								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "playerGraphics02",
+							"sid": 128013822794147,
+							"parameters": {
+								"instance-variable": "animationPlaying",
+								"value": "false"
 							}
 						}
 					],
