@@ -4,7 +4,7 @@ final float CLICK_AREA_HEIGHT = CANVAS_SIDE / 10;
 
 final float SQUARE_SIDE_VARIATION = CANVAS_SIDE / 50;
 final float SQUARE_SIDE_MAX = CANVAS_SIDE - (CLICK_AREA_HEIGHT * 2);
-float squareSide = SQUARE_SIDE_VARIATION;  
+float squareSide = SQUARE_SIDE_VARIATION;
 
 void settings()
 {
@@ -21,17 +21,17 @@ void setup()
 void draw()
 {
    background(255);
-   
+
    text("+", CANVAS_SIDE / 2, CLICK_AREA_HEIGHT / 2, CANVAS_SIDE, CLICK_AREA_HEIGHT);
    text("-", CANVAS_SIDE / 2, CANVAS_SIDE - (CLICK_AREA_HEIGHT / 2), CANVAS_SIDE, CLICK_AREA_HEIGHT);
 
    // big gray rectangle in the center of the canvas
    fill(128);
-   rect(CANVAS_SIDE / 2, CANVAS_SIDE / 2, CANVAS_SIDE, SQUARE_SIDE_MAX); 
+   rect(CANVAS_SIDE / 2, CANVAS_SIDE / 2, CANVAS_SIDE, SQUARE_SIDE_MAX);
 
    // black square in the center of the canvas
    fill(0);
-   square(CANVAS_SIDE / 2, CANVAS_SIDE / 2, squareSide);  
+   square(CANVAS_SIDE / 2, CANVAS_SIDE / 2, squareSide);
 }
 
 void mouseClicked()

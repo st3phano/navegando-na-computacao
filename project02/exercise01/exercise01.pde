@@ -7,7 +7,7 @@ final float RADIUS_CENTRAL_CIRCLE = CANVAS_SIDE - (3 * RADIUS_LATERAL_CIRCLE);
 void settings()
 {
    size(CANVAS_SIDE, CANVAS_SIDE);
-}   
+}
 
 void setup()
 {
