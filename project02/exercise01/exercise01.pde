@@ -2,7 +2,7 @@ final int CANVAS_SIDE = 600;
 
 final float RADIUS_LATERAL_CIRCLE = CANVAS_SIDE / 20;
 final float DIAMETER_LATERAL_CIRCLE = 2 * RADIUS_LATERAL_CIRCLE;
-final float RADIUS_CENTRAL_CIRCLE = CANVAS_SIDE - (3 * RADIUS_LATERAL_CIRCLE);
+final float DIAMETER_CENTRAL_CIRCLE = CANVAS_SIDE - (3 * RADIUS_LATERAL_CIRCLE);
 
 void settings()
 {
@@ -23,7 +23,7 @@ void draw()
       drawBlinkingCircle(xy, RADIUS_LATERAL_CIRCLE, DIAMETER_LATERAL_CIRCLE); // top
       drawBlinkingCircle(xy, CANVAS_SIDE - RADIUS_LATERAL_CIRCLE, DIAMETER_LATERAL_CIRCLE); // bottom
 
-      drawBlinkingCircle(CANVAS_SIDE / 2, CANVAS_SIDE / 2, RADIUS_CENTRAL_CIRCLE - xy); // center
+      drawBlinkingCircle(CANVAS_SIDE / 2, CANVAS_SIDE / 2, DIAMETER_CENTRAL_CIRCLE - xy); // center
    }
 }
 
