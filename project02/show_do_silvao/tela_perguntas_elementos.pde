@@ -18,7 +18,6 @@ private class Enunciado
 
    public Enunciado(String texto)
    {
-      // quebra UMA linha se o texto for extenso
       if (texto.length() > _CARACTERES_POR_LINHA)
       {
          _texto = texto.substring(0, _CARACTERES_POR_LINHA) + "\n" + texto.substring(_CARACTERES_POR_LINHA);
@@ -64,7 +63,6 @@ private class Alternativa
 
    public Alternativa(String texto, float y)
    {
-      // quebra UMA linha se o texto for extenso
       if (texto.length() > _CARACTERES_POR_LINHA)
       {
          _texto = texto.substring(0, _CARACTERES_POR_LINHA) + "\n" + texto.substring(_CARACTERES_POR_LINHA);
