@@ -96,10 +96,10 @@ public class TelaPerguntas
                {
                   // adiciona pontos extras pela sequência de acertos
                   _pontuacao.somarPontuacao(_PONTOS_ACERTO);
-
                   // adiciona tempo extra pela sequência de acertos
-                  _bonusSegundos.setMilisegundosInicioExibicao(millis());
                   _temporizador.adicinarSegundos(_bonusSegundos.getSegundos());
+
+                  _bonusSegundos.setMilisegundosInicioExibicao(millis());
                }
             }
             else
