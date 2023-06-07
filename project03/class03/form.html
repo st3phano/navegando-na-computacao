@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Formulários</title>
+</head>
+
+<body>
+   <form action="/autenticacao.php">
+      <label>Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+      <label>Data Nascimento:</label>
+      <input type="date" name="data">
+
+      <p>Qual dessas é uma linguagem de programação?</p>
+      <input type="radio" id="html" name="linguagem" value="HTML" required> <label>HTML</label>
+      <input type="radio" id="css" name="linguagem" value="CSS" required> <label>CSS</label>
+      <input type="radio" id="javascript" name="linguagem" value="javascript" required> <label>JavaScript</label>
+
+      <p>Quais esportes você curte?</p>
+      <input type="checkbox" id="ciclismo" name="ciclismo" value="Ciclismo"> <label>Ciclismo</label> <br>
+      <input type="checkbox" id="futebol" name="futebol" value="Futebol"> <label>Futebol</label> <br>
+      <input type="checkbox" id="boxe" name="boxe" value="Boxe"> <label>Boxe</label> <br>
+      <input type="checkbox" id="golfe" name="golfe" value="Golfe"> <label>Golfe</label> <br>
+
+      <input type="submit" value="Submit"> <br><br>
+      <input type="button" value="Adicionar aos favoritos"> <br><br>
+      <input type="reset" value="Limpar"> <br><br>
+   </form>
+</body>
+
+</html>
