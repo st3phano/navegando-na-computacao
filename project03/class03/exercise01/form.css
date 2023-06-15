@@ -1,0 +1,26 @@
+body {
+   display: flex;
+   justify-content: center;
+   background-color: aliceblue;
+}
+
+section form {
+   text-align: center;
+}
+
+section h1 {
+   text-align: center;
+}
+
+form button {
+   margin: 10px;
+   font-size: 20px;
+}
+
+.formulario {
+   width: 50%;
+}
+
+.small-label {
+   font-size: small;
+}

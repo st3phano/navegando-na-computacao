@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="form.css">
+   <title>Formulário</title>
+</head>
+
+<body>
+   <section class="formulario">
+      <h1>Formulário</h1>
+      <form action="https://formsubmit.co/86c8a48c8fe1d180be203d56025b7931" method="POST">
+         <label class="small-label">Seu nome</label> <br>
+         <input type="text" name="nome" placeholder="Digite seu nome" required> <br>
+
+         <label class="small-label">Seu e-mail</label> <br>
+         <input type="email" name="email" placeholder="Digite seu e-mail" required> <br>
+
+         <label class="small-label">Sua data de nascimento</label> <br>
+         <input type="date" name="dataNascimento" required> <br>
+
+         <div>
+            <p>Quais dias você treina membros inferiores?</p>
+            <input type="checkbox" id="domingo" name="domingo" value="domingo"> <label for="domingo">Domingo</label>
+            <input type="checkbox" id="segunda" name="segunda" value="segunda"> <label for="segunda">Segunda</label>
+            <input type="checkbox" id="terca" name="terca" value="terca"> <label for="terca">Terça</label>
+            <input type="checkbox" id="quarta" name="quarta" value="quarta"> <label for="quarta">Quarta</label>
+            <input type="checkbox" id="quinta" name="quinta" value="quinta"> <label for="quinta">Quinta</label>
+            <input type="checkbox" id="sexta" name="sexta" value="sexta"> <label for="sexta">Sexta</label>
+            <input type="checkbox" id="sabado" name="sabado" value="sabado"> <label for="sabado">Sábado</label>
+         </div>
+
+         <div>
+            <p>Qual seu suco favorito?</p>
+            <input type="radio" id="deca" name="suco" value="deca"> <label for="deca">Deca</label> <br>
+            <input type="radio" id="dura" name="suco" value="dura"> <label for="dura">Dura</label> <br>
+            <input type="radio" id="laranja" name="suco" value="laranja"> <label for="laranja">Laranja</label> <br>
+            <input type="radio" id="trembo" name="suco" value="trembo"> <label for="trembo">Trembo</label> <br>
+            <input type="radio" id="diana" name="suco" value="diana"> <label for="diana">Diana</label> <br>
+         </div>
+
+         <button type="submit">Enviar</button>
+      </form>
+   </section>
+</body>
+
+</html>
